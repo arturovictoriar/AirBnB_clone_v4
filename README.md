@@ -14,6 +14,8 @@ The console is the first segment of the AirBnB project at Holberton School that 
 * [File Descriptions](#file-descriptions)
 * [Usage](#usage)
 * [Examples of use](#examples-of-use)
+* [Web dynamic](#explanation)
+* [Examples Web Dynamic](#examples)	
 * [Bugs](#bugs)
 * [Authors](#authors)
 * [License](#license)
@@ -149,8 +151,55 @@ EOF  all  create  destroy  help  quit  show  update
 ** no instance found **
 (hbnb) quit
 ```
+## Web dynamic
+
+The web dynamic implements knowledge from javascript to manipulate the DOM and shows information according user choices. The flow
+starts in the html and javascript, then the javascript functions activates actions about the required data and finally the info is 
+displayed. 
+
+## Examples Web dynamic 
+
+## Example 1
+
+## Console 1
+
+HBNB_MYSQL_USER=hbnb_dev HBNB_MYSQL_PWD=hbnb_dev_pwd HBNB_MYSQL_HOST=localhost HBNB_MYSQL_DB=hbnb_dev_db HBNB_TYPE_STORAGE=db python3 -m web_dynamic.0-hbnb
+
+## Console 2
+
+curl -s -XGET http://0.0.0.0:5000/0-hbnb/ | head -6
+
+## Output
+
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8" />
+      <link rel="stylesheet" type="text/css" href="../static/styles/4-common.css?e211c9eb-7d17-4f12-85eb-4d50fa50cb1d" />
+      <link rel="stylesheet" type="text/css" href="../static/styles/3-header.css?e211c9eb-7d17-4f12-85eb-4d50fa50cb1d" />
+
+
+## Example 2
+
+## Console 1
+
+HBNB_MYSQL_USER=hbnb_dev HBNB_MYSQL_PWD=hbnb_dev_pwd HBNB_MYSQL_HOST=localhost HBNB_MYSQL_DB=hbnb_dev_db HBNB_TYPE_STORAGE=db python3 -m web_dynamic.0-hbnb
+
+## Console 2
+
+curl -s -XGET http://0.0.0.0:5000/0-hbnb/ | head -6
+
+## Output
+
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8" />
+      <link rel="stylesheet" type="text/css" href="../static/styles/4-common.css?f834413e-0aa9-4767-b64a-c92db9cb1f82" />
+      <link rel="stylesheet" type="text/css" href="../static/styles/3-header.css?f834413e-0aa9-4767-b64a-c92db9cb1f82" />
 
 ## Bugs
+
 No known bugs at this time. 
 
 ## Authors
@@ -158,6 +207,8 @@ Alexa Orrico - [Github](https://github.com/alexaorrico) / [Twitter](https://twit
 Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://twitter.com/earthtojhuang)  
 Jhoan Zamora - [Github](https://github.com/jzamora5) / [Twitter](https://twitter.com/JhoanZamora10)  
 David Ovalle - [Github](https://github.com/Nukemenonai) / [Twitter](https://twitter.com/disartDave)
+Arturo Victoria - [Github](https://github.com/arvicrin) / [Twitter](https://twitter.com/arvicrin)
+Orlando Gomez - [Github](https://github.com/oran2527) / [Twitter](https://twitter.com/orlago)
 
 Second part of Airbnb: Joann Vuong
 ## License
