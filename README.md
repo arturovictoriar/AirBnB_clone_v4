@@ -155,7 +155,7 @@ EOF  all  create  destroy  help  quit  show  update
 
 The web dynamic implements knowledge from javascript to manipulate the DOM and shows information according user choices. The flow
 starts in the html and javascript, then the javascript functions activates actions about the required data and finally the info is 
-displayed. 
+displayed. Using node js, the html doesn't reload all, only the part which executes the javascript code.
 
 ## Examples Web dynamic 
 
