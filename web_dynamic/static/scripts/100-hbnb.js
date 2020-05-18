@@ -119,6 +119,6 @@ $(document).ready(() => {
   });
   /* Add css */
   $('.amenities ul li input[type="checkbox"]').css({ margin: '0px 10px 0px 0px', padding: '10px 0 0 0' });
-  $('.locations ul input[type="checkbox"]').css({ margin: '0px 10px 0px 0px', padding: '10px 0 0 0' });
+  $('.locations ul input[type="checkbox"]').css({ margin: '0px 10px 0px 0px', padding: '10px 0 0 0', float: 'left' });
   $('.amenities h4').css({ height: '17px', 'max-width': '250px', 'text-overflow': 'ellipsis', 'white-space': 'nowrap', overflow: 'hidden' });
 });

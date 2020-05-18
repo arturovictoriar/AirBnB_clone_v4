@@ -66,10 +66,23 @@ $(document).ready(() => {
     window.alert('Server response not received.');
     $('DIV#api_status').removeClass('available');
   });
-
   /* Print all places */
   function templatePrint (data, index) {
     if (index >= data.length) {
+      /* Deploy reviews */
+      $('.review #sp input[type=checkbox]').on('click', function () {
+        const idPlace = $(this).attr('data-id');
+        if ($(this).prop('checked') === true) {
+          $.get(`http://0.0.0.0:5001/api/v1/places/${idPlace}/reviews`, function (data2, textStatus) {
+            for (const revi of data2) {
+              $(`div#${idPlace}`).append(`<div class="reviewD"><p>${revi.text}</p></div>`);
+            }
+          });
+        } else if ($(this).prop('checked') === false) {
+          console.log('Holi');
+          $('.reviewD').remove();
+        }
+      });
       return;
     }
 
@@ -96,25 +109,18 @@ $(document).ready(() => {
             ${place.description}
           </div>
           <div class="review">
-            <div>
+            <div id=${place.id}>
               <h2>Reviews</h2>
-              <span id="sp"><p>V</p></span>
-            <div>
+              <span id="sp"><INPUT type="checkbox" data-id=${place.id}></span>
+            </div>
           </div>
         </article>`;
-      templatePrint(data, index + 1);
       $('section.places').append(articleComplete);
       $('.review div').css({ 'border-bottom': '1px solid #DDDDDD', padding: '0 0 10px 0', margin: '30px 0 10px 0', height: '50px' });
       $('.review h2').css({ 'text-align': 'left', 'font-size': '17px', height: '30px', width: '90px', float: 'left', 'padding-top': '15px' });
       $('.review #sp').css({ display: 'block', height: '30px', float: 'left' });
-      $('.review #sp p').css({ height: '15px', width: '15px', border: '2px solid #DDDDDD', 'text-align': 'center', padding: '1px', color: '#DDDDDD' });
-      /* Deploy reviews */
-      $('.review #sp p').click(function () {
-        console.log('Holi');
-        $.get(`http://0.0.0.0:5001/api/v1/places/${place.id}/reviews`, function (data2, textStatus) {
-          console.log(data2);
-        });
-      });
+      $('.review #sp input').css({ 'margin-top': '20px' });
+      templatePrint(data, index + 1);
     });
   }
   /* Request for all places
