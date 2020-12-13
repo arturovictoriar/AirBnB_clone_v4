@@ -203,12 +203,12 @@ curl -s -XGET http://0.0.0.0:5000/0-hbnb/ | head -6
 No known bugs at this time. 
 
 ## Authors
-Alexa Orrico - [Github](https://github.com/alexaorrico) / [Twitter](https://twitter.com/alexa_orrico)  
-Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://twitter.com/earthtojhuang)  
-Jhoan Zamora - [Github](https://github.com/jzamora5) / [Twitter](https://twitter.com/JhoanZamora10)  
-David Ovalle - [Github](https://github.com/Nukemenonai) / [Twitter](https://twitter.com/disartDave)
-Arturo Victoria - [Github](https://github.com/arturovictoriar) / [Twitter](https://twitter.com/arturovictoriar)
-Orlando Gomez - [Github](https://github.com/oran2527) / [Twitter](https://twitter.com/orlago)
+- Alexa Orrico - [Github](https://github.com/alexaorrico) / [Twitter](https://twitter.com/alexa_orrico)  
+- Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://twitter.com/earthtojhuang)  
+- Jhoan Zamora - [Github](https://github.com/jzamora5) / [Twitter](https://twitter.com/JhoanZamora10)  
+- David Ovalle - [Github](https://github.com/Nukemenonai) / [Twitter](https://twitter.com/disartDave)
+- Arturo Victoria - [Github](https://github.com/arturovictoriar) / [Twitter](https://twitter.com/arturovictoriar)
+- Orlando Gomez - [Github](https://github.com/oran2527) / [Twitter](https://twitter.com/orlago)
 
 Second part of Airbnb: Joann Vuong
 ## License
